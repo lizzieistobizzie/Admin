@@ -1,0 +1,19 @@
+backend:
+  name: github
+  repo: lizzieistobizzie/Admin
+
+media_folder: "images"
+public_folder: "/images"
+
+collections:
+  - name: "posts"
+    label: "Diary Posts"
+    folder: "posts"
+    create: true
+
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+
+      - { label: "Date", name: "date", widget: "datetime" }
+
+      - { label: "Body", name: "body", widget: "markdown" }
